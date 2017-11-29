@@ -15,10 +15,10 @@ function getFilesConfig(files, options) {
       return {
         name,
         options: {
-          type,
-          file_filter: getFileFilter(projectPath, sourceLocale),
+          source_lang: sourceLocale,
           source_file: projectPath,
-          source_lang: sourceLocale
+          file_filter: getFileFilter(projectPath, sourceLocale),
+          type
         }
       };
     });

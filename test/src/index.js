@@ -9,22 +9,22 @@ const EXPECTED_RESPONSE = `[main]
 host = https://www.transifex.com
 
 [project-name.file1-json]
-type = KEYVALUEJSON
-file_filter = test/fixtures/sources/<lang>/file1.json
-source_file = test/fixtures/sources/es/file1.json
 source_lang = es
+source_file = test/fixtures/sources/es/file1.json
+file_filter = test/fixtures/sources/<lang>/file1.json
+type = KEYVALUEJSON
 
 [project-name.file2-json]
-type = KEYVALUEJSON
-file_filter = test/fixtures/sources/<lang>/file2.json
-source_file = test/fixtures/sources/es/file2.json
 source_lang = es
+source_file = test/fixtures/sources/es/file2.json
+file_filter = test/fixtures/sources/<lang>/file2.json
+type = KEYVALUEJSON
 
 [project-name.file3-txt]
-type = TXTTYPE
-file_filter = test/fixtures/sources/<lang>/file3.txt
-source_file = test/fixtures/sources/es/file3.txt
 source_lang = es
+source_file = test/fixtures/sources/es/file3.txt
+file_filter = test/fixtures/sources/<lang>/file3.txt
+type = TXTTYPE
 `;
 
 describe('generateTransifexConfig', () => {

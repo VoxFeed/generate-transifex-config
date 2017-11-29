@@ -78,22 +78,22 @@ This will generate the file `/my-project/.tx/config`, containing:
 host = https://www.transifex.com
 
 [my-project.file1-json]
-type = KEYVALUEJSON
-file_filter = i18n/<lang>/file1.json
-source_file = i18n/es/file1.json
 source_lang = en
+source_file = i18n/es/file1.json
+file_filter = i18n/<lang>/file1.json
+type = KEYVALUEJSON
 
 [my-project.file2-json]
-type = KEYVALUEJSON
-file_filter = i18n/<lang>/file2.json
-source_file = i18n/es/file2.json
 source_lang = en
+source_file = i18n/es/file2.json
+file_filter = i18n/<lang>/file2.json
+type = KEYVALUEJSON
 
 [my-project.subfolder-file3-md]
-type = MARKDOWN
-file_filter = i18n/<lang>/subfolder/file3.md
-source_file = i18n/es/subfolder/file3.md
 source_lang = en
+source_file = i18n/es/subfolder/file3.md
+file_filter = i18n/<lang>/subfolder/file3.md
+type = MARKDOWN
 ```
 
 💡 **Pro-tip:** You can create a file `generate-config.js` in .tx folder with the required parameters and a call to this module. That way anybody in your team just need to run:
