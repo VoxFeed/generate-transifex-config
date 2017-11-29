@@ -1,0 +1,36 @@
+{
+  "name": "generate-transifex-config",
+  "version": "1.0.0",
+  "description": "Script to generate a Transifex config file for a project, used by command line client.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --recursive ./test/index.js ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoxFeed/generate-transifex-config.git"
+  },
+  "keywords": [
+    "transifex",
+    "config",
+    "languages",
+    "cli",
+    "client",
+    "voxfeed"
+  ],
+  "author": "VoxFeed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VoxFeed/generate-transifex-config/issues"
+  },
+  "homepage": "https://github.com/VoxFeed/generate-transifex-config#readme",
+  "dependencies": {
+    "app-root-path": "^2.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.1.2"
+  }
+}
