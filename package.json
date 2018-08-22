@@ -1,6 +1,6 @@
 {
   "name": "generate-transifex-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Script to generate a Transifex config file for a project, used by command line client.",
   "main": "src/index.js",
   "scripts": {

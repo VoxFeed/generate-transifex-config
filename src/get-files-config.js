@@ -23,7 +23,7 @@ function getFilesConfig(files, options) {
       };
     });
 
-    return removeEmpty(results);
+    return sortByName(removeEmpty(results));
   }
 
   function buildFileOptions(fileTypes) {
@@ -42,6 +42,10 @@ function getFilesConfig(files, options) {
 
   function removeEmpty(array) {
     return array.filter(el => !!el);
+  }
+
+  function sortByName(array) {
+    return array.sort((a, b) => a.name > b.name);
   }
 
   return execute();
